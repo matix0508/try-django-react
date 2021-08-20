@@ -1,0 +1,8 @@
+# Django / Python stuff
+env/
+*.pyc
+*.sqlite3
+
+# React
+node_modules/
+build/
