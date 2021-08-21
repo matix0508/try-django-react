@@ -1,32 +1,31 @@
 {% load static %}
 
-<html>
+<html lang="eng">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="{% static 'myapp/styles.css' %}" />
+    <title>App</title>
     <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
 
     <script
-    src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
-    crossorigin></script>
+            src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+            crossorigin></script>
 
     <script
-    src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
-    crossorigin></script>
-
-    <script>var Alert = ReactBootstrap.Alert;</script>
+            src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+            crossorigin></script>
 
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-  integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-  crossorigin="anonymous"
-/>
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+            crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/styles.css' %}"/>
 </head>
 
 <body>
-    <div id="app" />
-    <script src="{% static 'myapp/build/main.js' %}"></script>
+<div class="container-fluid bg-secondary" id="app"></div>
+<script src="{% static 'myapp/build/main.js' %}"></script>
 </body>
 
 </html>
