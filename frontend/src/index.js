@@ -12,7 +12,8 @@ import MyNavBar from "./components/MyNavBar";
 import Routes from "./components/routes";
 import DarkMode from "./components/DarkMode";
 import Footer from "./components/Footer";
-
+import './tailwind.css'
+import NavBar from "./components/NavBar";
 
 class App extends Component {
     constructor(props) {
@@ -73,14 +74,15 @@ class App extends Component {
             <Container fluid>
                 <Row>
                     <Col>
-                        <MyNavBar
-                            darkMode={this.state.darkMode}
-                            title={this.state.brand}
-                            username={this.state.user}
-                            reload={() => this.setState({})}
-                        >
-                            <DarkMode on={this.state.darkMode} handler={() => this.switchMode()}/>
-                        </MyNavBar>
+                        <NavBar />
+                        {/*<MyNavBar*/}
+                        {/*    darkMode={this.state.darkMode}*/}
+                        {/*    title={this.state.brand}*/}
+                        {/*    username={this.state.user}*/}
+                        {/*    reload={() => this.setState({})}*/}
+                        {/*>*/}
+                        {/*    <DarkMode on={this.state.darkMode} handler={() => this.switchMode()}/>*/}
+                        {/*</MyNavBar>*/}
 
                     </Col>
                 </Row>

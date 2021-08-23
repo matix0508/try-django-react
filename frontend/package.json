@@ -22,6 +22,7 @@
     "react-hook-form": "^7.12.2",
     "react-markdown": "^7.0.0",
     "react-router-dom": "^5.2.0",
+    "tailwindcss": "^2.2.7",
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0"
   },

@@ -1,4 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
+import React from 'react';
 
 export default function MySlides(props) {
     return (
